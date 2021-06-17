@@ -46,9 +46,11 @@
     "@ckeditor/ckeditor5-typing": "^28.0.0"
   },
   "devDependencies": {
+    "@ckeditor/ckeditor5-alignment": "^28.0.0",
     "@ckeditor/ckeditor5-core": "^28.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^25.0.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^25.0.0",
+    "@ckeditor/ckeditor5-horizontal-line": "^28.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^28.0.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.1",
@@ -72,6 +74,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
+    "develop": "webpack --mode development --watch",
     "preversion": "npm run build"
   }
 }
