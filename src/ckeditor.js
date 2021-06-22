@@ -38,6 +38,7 @@ import SuperScriptPlugin from "@ckeditor/ckeditor5-basic-styles/src/superscript"
 import HorizontalLine from "@ckeditor/ckeditor5-horizontal-line/src/horizontalline";
 import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline";
 import Strikethrough from "@ckeditor/ckeditor5-basic-styles/src/strikethrough";
+import ImageResize from "@ckeditor/ckeditor5-image/src/imageresize";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -75,6 +76,7 @@ ClassicEditor.builtinPlugins = [
   HorizontalLine,
   Underline,
   Strikethrough,
+  ImageResize,
 ];
 
 // Editor configuration.
@@ -102,11 +104,11 @@ ClassicEditor.defaultConfig = {
   },
   image: {
     toolbar: [
-      "imageStyle:inline",
+      //   "imageStyle:inline",
       "imageStyle:full",
       "imageStyle:side",
       "|",
-      "toggleImageCaption",
+      //   "toggleImageCaption",
       "imageTextAlternative",
     ],
   },
